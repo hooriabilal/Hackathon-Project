@@ -1,0 +1,126 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5dc;
+    color: #4b3832;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.resume {
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fff8e7;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+.resume-header {
+    text-align: center;
+    border-bottom: 3px solid #d2b48c;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    position: relative;
+}
+
+.profile-pic {
+    width: 160px;
+    height: 160px;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    border: 2px solid #d2b48c;
+}
+
+.resume-header h1 {
+    margin: 0;
+    font-size: 42px;
+    color: #4b2e2b;
+    font-weight: bold;
+}
+
+.resume-header p {
+    font-size: 16px;
+    color: #6a5d57;
+}
+
+.resume-section {
+    margin-bottom: 30px;
+    padding-left: 15px;
+    border-left: 4px solid #d2b48c;
+}
+
+.resume-section h2 {
+    font-size: 26px;
+    color: #4b2e2b;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.resume-section h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 40px;
+    height: 2px;
+    background-color: #d2b48c;
+}
+
+.job {
+    margin-bottom: 15px;
+}
+
+.job h3 {
+    margin: 0;
+    font-size: 22px;
+    color: #4b3832;
+    font-weight: 600;
+}
+
+.job p {
+    margin: 5px 0 10px;
+    color: #6a5d57;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.skills li {
+    background-color: #e6ccb2;
+    padding: 8px 12px;
+    border-radius: 20px;
+    list-style: none;
+    color: #4b3832;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.skills li:hover {
+    background-color: #d2b48c;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .resume {
+        padding: 15px;
+    }
+
+    .resume-header h1 {
+        font-size: 32px;
+    }
+
+    .resume-section h2 {
+        font-size: 22px;
+    }
+
+    .job h3 {
+        font-size: 18px;
+    }
